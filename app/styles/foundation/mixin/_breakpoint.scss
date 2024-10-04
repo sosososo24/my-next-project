@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+@use "../setting" as *;
+
+// ex @include mq(sm) {}
+@mixin mq-min($breakpoint) {
+  @media #{map-get($breakpoint-min, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-max($breakpoint) {
+  @media #{map-get($breakpoint-max, $breakpoint)} {
+    @content;
+  }
+}

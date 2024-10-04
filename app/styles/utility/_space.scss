@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Utility space styles
+========================================================================== */
+.u-mt-0 {
+  margin-top: 0;
+}
+.u-mt-5xs {
+  margin-top: var(--space-5xs);
+}
+.u-mt-4xs {
+  margin-top: var(--space-4xs);
+}
+.u-mt-3xs {
+  margin-top: var(--space-3xs);
+}
+.u-mt-2xs {
+  margin-top: var(--space-2xs);
+}
+.u-mt-xs {
+  margin-top: var(--space-xs);
+}
+.u-mt-sm {
+  margin-top: var(--space-sm);
+}
+.u-mt-md {
+  margin-top: var(--space-md);
+}
+.u-mt-lg {
+  margin-top: var(--space-lg);
+}
+.u-mt-xl {
+  margin-top: var(--space-xl);
+}
+.u-mb-0 {
+  margin-bottom: 0;
+}
+.u-mb-5xs {
+  margin-bottom: var(--space-5xs);
+}
+.u-mb-4xs {
+  margin-bottom: var(--space-4xs);
+}
+.u-mb-3xs {
+  margin-bottom: var(--space-3xs);
+}
+.u-mb-2xs {
+  margin-bottom: var(--space-2xs);
+}
+.u-mb-xs {
+  margin-bottom: var(--space-xs);
+}
+.u-mb-sm {
+  margin-bottom: var(--space-sm);
+}
+.u-mb-md {
+  margin-bottom: var(--space-md);
+}
+.u-mb-lg {
+  margin-bottom: var(--space-lg);
+}
+.u-mb-xl {
+  margin-bottom: var(--space-xl);
+}
+/* Utility space styles end
+========================================================================== */

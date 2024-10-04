@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+@use '../foundation' as *;
+
+/* Header styles
+========================================================================== */
+.l-header {
+  position: absolute;
+  padding: 16px 24px 8px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  &_link {
+    display: flex;
+  }
+  &_logo {
+    width: auto;
+    height: 24px;
+  }
+}
+/* Header styles end
+========================================================================== */

@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+@use '../foundation' as *;
+
+/*  Footer styles
+========================================================================== */
+.l-footer {
+  padding: 16px 24px;
+  text-align: center;
+  color: #181818;
+  font-size: 0.8em;
+  margin-top: 80px;
+  &_nav {
+    margin-bottom: 1em;
+  }
+  &_navItems {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    white-space: nowrap;
+  }
+}
+/* Footer styles end
+========================================================================== */

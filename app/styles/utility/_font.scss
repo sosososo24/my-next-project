@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Utility font styles
+========================================================================== */
+.u-fz-2xs {
+  font-size: var(--fz-2xs);
+}
+.u-fz-xs {
+  font-size: var(--fz-xs);
+}
+.u-fz-sm {
+  font-size: var(--fz-sm);
+}
+.u-fz-base {
+  font-size: var(--fz-base);
+}
+.u-fz-lg {
+  font-size: var(--fz-lg);
+}
+.u-fz-xl {
+  font-size: var(--fz-xl);
+}
+.u-fz-2xl {
+  font-size: var(--fz-2xl);
+}
+.u-fz-3xl {
+  font-size: var(--fz-3xl);
+}
+.u-fz-4xl {
+  font-size: var(--fz-4xl);
+}
+.u-fz-5xl {
+  font-size: var(--fz-5xl);
+}
+.u-fz-6xl {
+  font-size: var(--fz-6xl);
+}
+.u-fz-thin {
+  font-weight: var(--fz-thin);
+}
+.u-fz-extralight {
+  font-weight: var(--fz-extralight);
+}
+.u-fz-light {
+  font-weight: var(--fz-light);
+}
+.u-fz-normal {
+  font-weight: var(--fz-normal);
+}
+.u-fz-medium {
+  font-weight: var(--fz-medium);
+}
+.u-fz-semibold {
+  font-weight: var(--fz-semibold);
+}
+.u-fz-bold {
+  font-weight: var(--fz-bold);
+}
+.u-fz-extrabold {
+  font-weight: var(--fz-extrabold);
+}
+.u-fz-black {
+  font-weight: var(--fz-black);
+}
+/* Utility font styles end
+========================================================================== */

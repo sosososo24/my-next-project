@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Component inner styles
+========================================================================== */
+.c-inner-medium,
+.c-inner-small,
+.c-inner-large {
+  width: var(--contents-pct);
+  margin-inline: auto;
+}
+.c-inner-small {
+  max-width: 77.7rem;
+}
+.c-inner-medium {
+  max-width: 100rem;
+}
+.c-inner-large {
+  max-width: 122.4rem;
+}
+@media screen and (min-width: 1024px) {
+  .c-inner-large1 {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .c-inner-large2 {
+    width: var(--contents-pct);
+  }
+}
+.c-inner-large3 {
+  max-width: 130rem;
+  margin-inline: auto;
+}
+.c-inner-full {
+  width: 100%;
+  max-width: calc(var(--design-width-pc) * 0.1rem);
+  margin-inline: auto;
+}
+.c-inner-full-large {
+  width: 100%;
+  max-width: 192rem;
+  margin-inline: auto;
+}
+/* Component inner styles end
+========================================================================== */

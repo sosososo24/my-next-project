@@ -1,0 +1,202 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Utility space styles
+========================================================================== */
+.u-symbol-custom {
+  display: inline-block;
+}
+
+.u-symbol-custom,
+.u-list-nakaguro li,
+.u-list-dot li,
+.u-list-asterisk li,
+.u-list-decimal li,
+.u-list-circled-decimal li {
+  position: relative;
+  padding-left: 1.1em;
+}
+.u-list-roman-upper li,
+.u-list-roman-lower li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.u-symbol-custom::before {
+  content: attr(data-symbol) !important;
+  position: absolute;
+  left: 0;
+}
+
+.u-list-nakaguro li::before {
+  content: "・" !important;
+  position: absolute;
+  left: 0;
+}
+
+.u-list-dot li::before {
+  content: "●" !important;
+  position: absolute;
+  left: 0;
+}
+
+.u-list-asterisk li::before {
+  content: "※" !important;
+  position: absolute;
+  left: 0;
+}
+
+.u-list-decimal {
+  counter-reset: decimal-counter;
+}
+.u-list-decimal li::before {
+  position: absolute;
+  left: 0;
+}
+.u-list-decimal li:nth-child(1)::before {
+  content: "1. ";
+}
+.u-list-decimal li:nth-child(2)::before {
+  content: "2. ";
+}
+.u-list-decimal li:nth-child(3)::before {
+  content: "3. ";
+}
+.u-list-decimal li:nth-child(4)::before {
+  content: "4. ";
+}
+.u-list-decimal li:nth-child(5)::before {
+  content: "5. ";
+}
+.u-list-decimal li:nth-child(6)::before {
+  content: "6. ";
+}
+.u-list-decimal li:nth-child(7)::before {
+  content: "7. ";
+}
+.u-list-decimal li:nth-child(8)::before {
+  content: "8. ";
+}
+.u-list-decimal li:nth-child(9)::before {
+  content: "9. ";
+}
+.u-list-decimal li:nth-child(10)::before {
+  content: "10. ";
+}
+
+.u-list-circled-decimal {
+  counter-reset: list-counter;
+}
+.u-list-circled-decimal li::before {
+  position: absolute;
+  left: 0;
+}
+.u-list-circled-decimal li:nth-child(1)::before {
+  content: "①";
+}
+.u-list-circled-decimal li:nth-child(2)::before {
+  content: "②";
+}
+.u-list-circled-decimal li:nth-child(3)::before {
+  content: "③";
+}
+.u-list-circled-decimal li:nth-child(4)::before {
+  content: "④";
+}
+.u-list-circled-decimal li:nth-child(5)::before {
+  content: "⑤";
+}
+.u-list-circled-decimal li:nth-child(6)::before {
+  content: "⑥";
+}
+.u-list-circled-decimal li:nth-child(7)::before {
+  content: "⑦";
+}
+.u-list-circled-decimal li:nth-child(8)::before {
+  content: "⑧";
+}
+.u-list-circled-decimal li:nth-child(9)::before {
+  content: "⑨";
+}
+.u-list-circled-decimal li:nth-child(10)::before {
+  content: "⑩";
+}
+
+.u-list-roman-upper {
+  counter-reset: list-counter;
+}
+.u-list-roman-upper li::before {
+  position: absolute;
+  left: 0;
+}
+.u-list-roman-upper li:nth-child(1)::before {
+  content: "Ⅰ. ";
+}
+.u-list-roman-upper li:nth-child(2)::before {
+  content: "Ⅱ. ";
+}
+.u-list-roman-upper li:nth-child(3)::before {
+  content: "Ⅲ. ";
+}
+.u-list-roman-upper li:nth-child(4)::before {
+  content: "Ⅳ. ";
+}
+.u-list-roman-upper li:nth-child(5)::before {
+  content: "Ⅴ. ";
+}
+.u-list-roman-upper li:nth-child(6)::before {
+  content: "Ⅵ. ";
+}
+.u-list-roman-upper li:nth-child(7)::before {
+  content: "Ⅶ. ";
+}
+.u-list-roman-upper li:nth-child(8)::before {
+  content: "Ⅷ. ";
+}
+.u-list-roman-upper li:nth-child(9)::before {
+  content: "Ⅸ. ";
+}
+.u-list-roman-upper li:nth-child(10)::before {
+  content: "Ⅹ. ";
+}
+
+.u-list-roman-lower {
+  counter-reset: list-counter;
+}
+.u-list-roman-lower li::before {
+  position: absolute;
+  left: 0;
+}
+.u-list-roman-lower li:nth-child(1)::before {
+  content: "ⅰ.";
+}
+.u-list-roman-lower li:nth-child(2)::before {
+  content: "ⅱ.";
+}
+.u-list-roman-lower li:nth-child(3)::before {
+  content: "ⅲ.";
+}
+.u-list-roman-lower li:nth-child(4)::before {
+  content: "ⅳ.";
+}
+.u-list-roman-lower li:nth-child(5)::before {
+  content: "ⅴ.";
+}
+.u-list-roman-lower li:nth-child(6)::before {
+  content: "ⅵ.";
+}
+.u-list-roman-lower li:nth-child(7)::before {
+  content: "ⅶ.";
+}
+.u-list-roman-lower li:nth-child(8)::before {
+  content: "ⅷ.";
+}
+.u-list-roman-lower li:nth-child(9)::before {
+  content: "ⅸ.";
+}
+.u-list-roman-lower li:nth-child(10)::before {
+  content: "ⅹ.";
+}
+
+/* Utility space styles end
+========================================================================== */

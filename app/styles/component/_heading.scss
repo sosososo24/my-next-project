@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Component heading styles
+========================================================================== */
+.c-heading {
+  position: relative;
+  margin-bottom: var(--space-sm);
+  padding-bottom: 0.66666667em;
+  font-size: var(--fz-3xl);
+  text-align: center;
+  line-height: 1.25;
+  &_inr {
+    &::after {
+      content: "";
+      display: block;
+      width: myClamp(100, 160);
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+    .num {
+      font-size: 1.72222222em;
+    }
+    .yellow {
+      color: var(--yellow);
+    }
+  }
+  &.blue {
+    color: var(--darkblue);
+    .c-heading_inr::after {
+      background-color: var(--darkblue);
+    }
+  }
+  &.white {
+    color: var(--white);
+    .c-heading_inr::after {
+      background-color: var(--white);
+    }
+  }
+}
+
+/* Component heading styles end
+========================================================================== */

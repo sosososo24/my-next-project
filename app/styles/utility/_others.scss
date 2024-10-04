@@ -1,0 +1,76 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Utility others styles
+========================================================================== */
+.u-db {
+  display: block;
+}
+.u-dib {
+  display: inline-block;
+}
+.u-di {
+  display: inline;
+}
+.u-hdn {
+  display: none;
+}
+@include mq-min(sm) {
+  .u-hdn\@pc {
+    display: none;
+  }
+}
+@include mq-min(lg) {
+  .u-hdn\@tab {
+    display: none;
+  }
+}
+@include mq-max(sm) {
+  .u-hdn\@sp {
+    display: none;
+  }
+}
+.u-tac {
+  text-align: center;
+}
+@include mq-min(sm) {
+  .u-tac\@pc {
+    text-align: center;
+  }
+}
+@include mq-max(sm) {
+  .u-tac\@sp {
+    text-align: center;
+  }
+}
+.u-tal {
+  text-align: left;
+}
+@include mq-min(sm) {
+  .u-tal\@pc {
+    text-align: left;
+  }
+}
+@include mq-max(sm) {
+  .u-tal\@sp {
+    text-align: left;
+  }
+}
+.u-tar {
+  text-align: right;
+}
+@include mq-min(sm) {
+  .u-tar\@pc {
+    text-align: right;
+  }
+}
+@include mq-max(sm) {
+  .u-tar\@sp {
+    text-align: right;
+  }
+}
+.u-color-red {
+  color: var(--red);
+}
+/* Utility others styles end
+========================================================================== */

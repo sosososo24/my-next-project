@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Component icon styles
+========================================================================== */
+.c-icon-sankaku {
+  margin-inline: auto;
+  width: 60%;
+  aspect-ratio: 353 / 35;
+  @include mq-min(sm) {
+    width: 35%;
+  }
+  &._light-darkblue {
+    color: #eaeff6;
+  }
+  &._dark-blue {
+    color: #2457a5;
+  }
+  &._blue {
+    color: #edf7ff;
+  }
+  &._pink {
+    color: #fff2f2;
+  }
+  &._orange {
+    color: #fff4ed;
+  }
+}
+/* Component icon styles end
+========================================================================== */

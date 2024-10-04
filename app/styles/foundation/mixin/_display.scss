@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+
+// グリッドレイアウトのMixin
+@mixin set-grid($columns, $column-gap, $row-gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, minmax(0, 1fr));
+  @if $column-gap {
+    column-gap: var($column-gap);
+  }
+  @if $row-gap {
+    row-gap: var($row-gap);
+  }
+}
+
+// カラムの数に基づいてグリッドレイアウトを設定するMixin
+// @include grid(1, --space-x-16, --space-x-16);
+// @include mq(md, max) { @include grid(1); }
+
+@mixin grid($columns, $column-gap: null, $row-gap: null) {
+  @include set-grid($columns, $column-gap, $row-gap);
+}
+
+// フレックスレイアウトのMixin
+@mixin set-flex($direction, $justify, $align) {
+  display: flex;
+  @if $direction {
+    flex-direction: $direction;
+  }
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $align {
+    align-items: $align;
+  }
+}
+
+// フレックスレイアウトを設定するMixin
+// @include flex(row, center, center);
+// @include mq(md, max) { @include flex(column, center, center); }
+@mixin flex($direction: null, $justify: null, $align: null) {
+  @include set-flex($direction, $justify, $align);
+}
+
+// フレックスベイシスのMixin
+@mixin set-basis($bases...) {
+  @for $i from 1 through length($bases) {
+    &:nth-child(#{$i}) {
+      flex-basis: nth($bases, $i);
+    }
+  }
+}
+
+// フレックスベイシスを設定するMixin
+// @include set-basis(100%, 50%, 33%, 25%);
+// @include mq(md, max) { @include set-basis(100%); }
+@mixin basis($bases...) {
+  @include set-basis($bases...);
+}

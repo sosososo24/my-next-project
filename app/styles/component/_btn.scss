@@ -1,0 +1,166 @@
+@charset 'UTF-8';
+@use '../foundation' as *;
+
+/* Component button styles
+========================================================================== */
+.c-btn-white {
+  font-size: myClamp(14, 18);
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    padding: myClamp(8, 12) myClamp(16, 120);
+    width: fit-content;
+    background-color: var(--white);
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 70px;
+    gap: var(--space-3xs);
+    transition: 0.3s all var(--easeOutSine);
+    will-change: background-image, transform;
+    span {
+      flex: 1;
+    }
+    &.full {
+      width: 100%;
+    }
+    &.target::after {
+      content: '';
+      display: block;
+      width: myClamp(16, 20);
+      height: auto;
+      aspect-ratio: 19.535 / 14.988;
+      background-image: target-ico('1C50A1');
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &.pdf::after {
+      content: '';
+      display: block;
+      width: myClamp(16, 24);
+      height: auto;
+      aspect-ratio: 23 / 28;
+      background-image: url(/assets/images/components/c-pdf-icon.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  @include mq-min(lg) {
+    a:hover {
+      color: var(--white);
+      background-color: var(--darkblue);
+      border: 1px solid var(--darkblue);
+      &.target::after {
+        background-image: target-ico('ffffff');
+      }
+    }
+  }
+}
+.c-btn-orange {
+  font-size: myClamp(16, 24);
+  color: var(--white);
+  font-weight: var(--fz-bold);
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    padding: myClamp(16, 24) myClamp(32, 185);
+    min-width: 67%;
+    width: fit-content;
+    background-color: var(--orange);
+    text-align: center;
+    border: 1px solid var(--white);
+    border-radius: 70px;
+    gap: var(--space-3xs);
+    transition: 0.3s all var(--easeOutSine);
+    span {
+      flex: 1;
+    }
+    &.full {
+      width: 100%;
+    }
+    &.target::after {
+      content: '';
+      display: block;
+      width: myClamp(16, 20);
+      height: auto;
+      aspect-ratio: 19.535 / 14.988;
+      background-image: nav-link-ico('ffffff');
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: 0.3s all var(--easeOutSine);
+    }
+    &.agree::after {
+      content: '';
+      display: block;
+      width: myClamp(16, 28);
+      height: auto;
+      aspect-ratio: 19.535 / 14.988;
+      background-image: target-ico('ffffff');
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: 0.4s all var(--easeOutSine);
+    }
+  }
+  @include mq-min(lg) {
+    a:hover {
+      color: var(--white);
+      // background-color: color-mix(in srgb, var(--orange) 80%, #000 20%);
+      background-color: #ff3300;
+      &.target::after {
+        background-image: nav-link-ico('ffffff');
+        transform: translateX(5px);
+      }
+      &.agree::after {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.c-btn-lightblue {
+  font-size: myClamp(14, 18);
+  font-weight: var(--fz-bold);
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    padding: myClamp(10, 24) myClamp(16, 96);
+    width: fit-content;
+    background-color: #6d96b5;
+    color: var(--white);
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 70px;
+    gap: var(--space-3xs);
+    transition: 0.3s all var(--easeOutSine);
+    span {
+      flex: 1;
+    }
+    &.full {
+      width: 100%;
+    }
+    &.target::after {
+      display: inline-block;
+      content: '▶︎';
+      transition: 0.3s all var(--easeOutSine);
+      line-height: 1;
+    }
+  }
+  @include mq-min(lg) {
+    a:hover {
+      background-color: color-mix(in srgb, #6d96b5 80%, #000 20%);
+      &.target::after {
+        transform: translateX(5px);
+      }
+    }
+  }
+}
+/* Component button styles end
+========================================================================== */

@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+@use "../foundation" as *;
+
+/* Component Accordion styles
+========================================================================== */
+.js-accordion_cnt {
+  transition: all 0.3s var(--easeOutQuad);
+}
+/* Component Accordion styles end
+========================================================================== */
