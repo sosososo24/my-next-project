@@ -18,6 +18,64 @@
     width: auto;
     height: 24px;
   }
+  &_nav {
+    @include mq-max(sm) {
+      display: none;
+      &.open {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--black);
+        color: var(--white);
+        padding: 24px 16px;
+      }
+    }
+  }
+  &_navItems {
+    display: flex;
+    color: var(--white);
+    gap: 40px;
+  }
+}
+.l-hamburger {
+  display: none;
+  @include mq-max(sm) {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &._close {
+      position: absolute;
+      top: 24px;
+      right: 16px;
+    }
+  }
 }
 /* Header styles end
+========================================================================== */
+
+/* 404 styles
+========================================================================== */
+.l-notfound {
+  position: relative;
+  background-color: var(--white);
+  width: 840px;
+  margin: -40px auto 0;
+  padding: 160px 80px;
+  border-radius: 20px;
+  &_ttl {
+    font-size: 2.5em;
+    font-weight: var(--fz-bold);
+    text-align: center;
+  }
+  &_txt {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+/* 404 styles end
 ========================================================================== */

@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@use "../foundation" as *;
+@use '../foundation' as *;
 
 /* Component inner styles
 ========================================================================== */
@@ -41,6 +41,10 @@
   width: 100%;
   max-width: 192rem;
   margin-inline: auto;
+}
+
+.c-inner-pad {
+  padding-block: var(--sct-pd-block);
 }
 /* Component inner styles end
 ========================================================================== */

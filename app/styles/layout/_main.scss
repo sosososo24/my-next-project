@@ -12,9 +12,15 @@
   color: var(--white);
   overflow: hidden;
   padding: 200px 0;
+  &._sub {
+    padding: 100px 0;
+  }
   &_ttl {
     font-size: 2.5em;
     font-weight: var(--fz-bold);
+  }
+  &_sub {
+    text-align: center;
   }
   &_img {
     position: absolute;
@@ -27,4 +33,41 @@
   }
 }
 /* Main visual styles end
+==============================================================================================*/
+
+/* Member visual styles
+==============================================================================================*/
+.l-member {
+  &_lists {
+    &_item {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 80px;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+    &_image {
+      width: 240px;
+      height: auto;
+      border-radius: 8px;
+    }
+    &_name {
+      font-size: 1.2em;
+      font-weight: var(--fz-bold);
+    }
+    &__position {
+      margin-bottom: 8px;
+    }
+    &_profile {
+      font-size: 0.9em;
+    }
+  }
+  &_empty {
+    font-size: 2em;
+    font-weight: var(--fz-bold);
+  }
+}
+/* Member visual styles end
 ==============================================================================================*/

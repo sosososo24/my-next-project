@@ -9,3 +9,15 @@ export type News = {
   publishedAt: string;
   createdAt: string;
 };
+
+export type Member = {
+  id: string;
+  image: {
+    url: string;
+    width: number;
+    height: number;
+  };
+  name: string;
+  position: string;
+  profile: string;
+};

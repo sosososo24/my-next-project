@@ -41,7 +41,9 @@ export default function Home() {
   return (
     <>
       <section className="l-main">
-        <h1 className="l-main_ttl">これはタイトルです</h1>
+        <div>
+          <h1 className="l-main_ttl">これはタイトルです</h1>
+        </div>
         <Image className="l-main_img" src="/img-mv.jpg" alt="" width={4000} height={1200} />
       </section>
       <section className="c-news">
