@@ -17,7 +17,11 @@ export default function NewsList({ news }: Props) {
       {news.map((article) => (
         <li key={article.id} className="c-news_list_item">
           <Link href={`/news/${article.id}`} className="c-news_link">
-            <Image className="c-news_img" src="/no-image.png" alt="no image" width={1200} height={630} />
+            {article.thumbnail ? (
+              <Image className="c-news_img" src={article.thumbnail.url} alt="" width={article.thumbnail.width} height={article.thumbnail.height} />
+            ) : (
+              <Image className="c-news_img" src="/no-image.png" alt="no image" width={1200} height={630} />
+            )}
             <dl className="c-news_content">
               <dt className="c-news_title">{article.title}</dt>
               <dd className="c-news_meta">
